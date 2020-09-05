@@ -1,0 +1,82 @@
+﻿@model IEnumerable<FinalProjJC.Models.AllCourse>
+@{
+    ViewBag.Title = "Software Development";
+}
+    <h2>Software Development</h2>
+<table class="table">
+    <tr>
+        <th>Course Name</th>
+        <th>Course Number</th>
+        <th>PB_40</th>
+        <th>ME_40</th>
+        <th>CO_40</th>
+        <th>TI_40</th>
+        <th>EL_40</th>
+        <th>PB_20</th>
+        <th>ME_20</th>
+        <th>CO_20</th>
+        <th>TI_20</th>
+        <th>EL_20</th>
+        <th>PB_10</th>
+        <th>ME_10</th>
+        <th>CO_10</th>
+        <th>TI_10</th>
+        <th>EL_10</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(m => item.CourseName)
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.CourseNum)
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.PB_40)
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.ME_40)
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.CO_40)
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.TI_40)
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.EL_40)
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.PB_10)
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.ME_10)
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.CO_10)
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.TI_10)
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.EL_10)
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.PB_20)
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.ME_20)
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.CO_20)
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.TI_20)
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.PB_40)
+            </td>
+        </tr>
+    }
+</table>
